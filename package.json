@@ -1,10 +1,9 @@
 {
-  "name": "template-node-ts",
+  "name": "project-name",
   "version": "0.0.0-development",
-  "description": "Template project for node.js and Typescript with workflows and semantic releasing",
+  "description": "Template for development of Node applications using typescript   ",
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "[ -d post-clone-scripts ] && ./post-clone-scripts/install-semantic-release.sh && rm -rf ./post-clone-scripts || true",
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "tsc",
@@ -16,16 +15,8 @@
     "start:dev": "tsnd --rs ./src/index.ts",
     "semantic-release": "semantic-release"
   },
-  "author": "Lucas Santos <hello@lsantos.dev>",
+  "author": "Vinícius Carvalho",
   "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/khaosdoctor/template-node-ts/issues"
-  },
-  "homepage": "https://github.com/khaosdoctor/template-node-ts#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/khaosdoctor/template-node-ts"
-  },
   "devDependencies": {
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
